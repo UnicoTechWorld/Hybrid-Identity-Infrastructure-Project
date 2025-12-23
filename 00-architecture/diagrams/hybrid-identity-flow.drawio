@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2025-12-23T00:00:00.000Z" agent="GPT-5.2" version="24.7.7" type="device">
+  <diagram id="hybrid-identity-flow" name="hybrid-identity-flow">
+    <mxGraphModel dx="1300" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="t1" value="UnicoTechWorld - Hybrid Identity Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="600" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u1" value="User" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d1" value="Device (Domain-joined / Managed)" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="260" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ad1" value="On-Prem Active Directory" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="230" width="260" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" value="Microsoft Entra ID (Cloud identity and access control)" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="780" y="230" width="320" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c1" value="Cloud Application / Resource" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="820" y="420" width="260" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="l1" value="Sign-in request" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="170" width="200" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="l2" value="Identity source / trust relationship" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="520" y="190" width="260" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="l3" value="Access decision (MFA / Conditional Access)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="820" y="190" width="300" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e_u_ad" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="u1" target="ad1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e_d_ad" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="d1" target="ad1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e_ad_e" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="ad1" target="e1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e_e_c" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="e1" target="c1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="n1" value="Focus: identity and access decisions only (conceptual - no configuration details)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#999999;dashed=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="260" y="600" width="600" height="60" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

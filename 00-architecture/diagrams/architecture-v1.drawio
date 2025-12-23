@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.9">
+  <diagram id="architecture-v1" name="architecture-v1">
+    <mxGraphModel dx="1418" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;" value="UnicoTechWorld – Architecture v1 (Baseline)" vertex="1">
+          <mxGeometry height="40" width="600" x="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;container=1;collapsible=0;childLayout=stackLayout;horizontal=0;spacing=10;startSize=30;fillColor=#ffffff;" value="On-Premises Environment" vertex="1">
+          <mxGeometry height="520" width="860" x="130" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" value="Windows Server (Multi-role)&#xa;• AD DS&#xa;• DNS&#xa;• DHCP" vertex="1">
+          <mxGeometry height="170" width="320" x="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="w1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;" value="Windows 11 Client&#xa;(Domain-joined)" vertex="1">
+          <mxGeometry height="130" width="260" x="640" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;" value="Authentication / DNS / DHCP" vertex="1">
+          <mxGeometry height="30" width="240" x="470" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s1" style="endArrow=block;html=1;strokeWidth=2;" target="w1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#999999;dashed=1;align=center;verticalAlign=middle;fontSize=12;fillColor=#ffffff;" value="Scope: baseline only (no cloud / no CA / no Intune yet)" vertex="1">
+          <mxGeometry height="60" width="600" x="250" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
